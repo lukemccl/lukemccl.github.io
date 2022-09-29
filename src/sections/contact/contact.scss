@@ -1,0 +1,25 @@
+.contact-card {
+
+    margin: 0 2rem;
+
+    a {
+        text-decoration: none; 
+        color: black; 
+    }
+
+    .contact-header {
+        font-weight: bold;
+    }
+
+    .contact-item {
+
+        display: flex;
+        flex-direction: column;
+
+
+        svg:hover {
+            transition: all .1s ease-in-out; 
+            transform: scale(1.1);
+        }
+    }
+}
