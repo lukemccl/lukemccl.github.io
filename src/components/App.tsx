@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 import { Navbar } from './navbar/navbar';
-import { Welcome } from '../sections/welcome/welcome';
+import { About } from '../sections/about/about';
 import { Career } from '../sections/career/career';
 import { Projects } from '../sections/projects/projects';
 import { Hobbies } from '../sections/hobbies/hobbies';
@@ -12,11 +12,9 @@ import './App.scss';
 function App() {
   return (
     <div className="App line-in-middle">
-
-      <Navbar sections={['Home', 'Career', 'Projects', 'Hobbies', 'Contact']}/>
-
+      <Navbar sections={['About', 'Career', 'Projects', 'Hobbies', 'Contact']}/>
       <div className='app-body'>
-        <Welcome />
+        <About />
         <Career />
         <Projects />
         <Hobbies />

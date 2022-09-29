@@ -10,23 +10,23 @@ import './contact.scss';
 
 export const Contact = () => {
 
-    type contactType = {
+    type ContactType = {
         name: string;
         icon: IconProp;
         link?: string;
     };
 
-    const renderCard = (header: string, body: contactType[]) => (
+    const renderCard = (header: string, body: ContactType[]) => (
         <Card className='col contact-card'>
             <CardHeader className='contact-header'>{header}</CardHeader>
             <CardBody className='row'>
                 {body.map(b => 
                     b.link 
-                    ? <a href={b.link} className='col contact-item'>
+                    ? <a key={b.name} href={b.link} className='col contact-item'>
                         <FontAwesomeIcon icon={b.icon} size='4x'/>
                         {b.name}
                     </a>
-                    : <div className='col contact-item'>
+                    : <div key={b.name} className='col contact-item'>
                         <FontAwesomeIcon icon={b.icon} size='4x'/>
                         {b.name}
                     </div>

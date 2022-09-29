@@ -1,0 +1,17 @@
+.card {
+    .card-background {
+        filter: blur(5px);
+        
+    }   
+    
+    &:hover {
+        .card-background {
+            filter: blur(0px);
+        }
+    }
+
+    a {
+        text-decoration: none; 
+        color: black; 
+    }
+}
