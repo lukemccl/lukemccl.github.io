@@ -16,7 +16,7 @@ export const Navbar = (props: NavbarProps) => {
 
     const profileImage = () => (
         <div className='profile-avatar'>
-            <img className='profile-image' src='https://avatars.githubusercontent.com/u/32748875' />
+            <img className='profile-image' alt='Luke McClure' src='https://avatars.githubusercontent.com/u/32748875' />
             Luke McClure
         </div>
     );
@@ -37,6 +37,7 @@ export const Navbar = (props: NavbarProps) => {
 
     const scrollToMenu = (id: string) => {
         const section = document.getElementById(id) as HTMLDivElement
+        console.log(section.getBoundingClientRect().top);
         window.scroll({top: section.getBoundingClientRect().top, behavior: 'smooth'})
     };
 
@@ -51,7 +52,7 @@ export const Navbar = (props: NavbarProps) => {
     );
 
     return (
-        <header className='navbar'>
+        <header className='navbar sticky-top'>
             {profileImage()}
             {menu()}
             {externalLinks()}

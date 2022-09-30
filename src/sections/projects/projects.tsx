@@ -3,9 +3,9 @@ import { Card, CardImg, CardImgOverlay } from 'reactstrap';
 
 import CancerExplorationImg from '../../assets/imgs/cancer.png';
 import CarsImg from '../../assets/imgs/cars.png';
-import DissMp4 from '../../assets/mp4s/diss.mp4';
-import CarMp4 from '../../assets/mp4s/mountaincar.mp4';
-import SiteMp4 from '../../assets/mp4s/website.mp4';
+import DissMp4 from '../../assets/mp4s/projects/diss.mp4';
+import CarMp4 from '../../assets/mp4s/projects/mountaincar.mp4';
+import SiteMp4 from '../../assets/mp4s/projects/website.mp4';
 
 import './projects.scss';
 
@@ -37,7 +37,7 @@ export const Projects = () => {
         }
 
         return (
-            <Card key={project.name} onMouseEnter={hoverOn} onMouseLeave={hoverOff}>
+            <Card className='project-card' key={project.name} onMouseEnter={hoverOn} onMouseLeave={hoverOff}>
                 {project.type === 'img'
                 ? <CardImg className='card-background' src={project.src} />
                 : <video   className='card-background' src={project.src} id={project.name} disableRemotePlayback loop muted playsInline></video> }
@@ -99,7 +99,7 @@ export const Projects = () => {
     }
 
     return (
-        <div id='Projects'>
+        <div id='Projects' className='section projects'>
             <div className="row row-cols-3">
                 {renderCards()}
             </div>

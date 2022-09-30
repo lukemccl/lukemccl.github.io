@@ -1,13 +1,14 @@
 .App {
-  text-align: center;
   display: flex;
   flex-direction: column;
-  scroll-behavior: smooth;
   align-items: center;
 
   .app-body {
-    justify-content: center;
     width: 75%;
+  }
+
+  .section {
+    margin-bottom: 5rem;
   }
 }
 

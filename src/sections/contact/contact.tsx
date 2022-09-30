@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { Card, CardBody, CardHeader, Row } from 'reactstrap';
+import { Card, CardBody, CardHeader } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faFileLines, faPhone,  } from '@fortawesome/free-solid-svg-icons';
@@ -50,7 +50,7 @@ export const Contact = () => {
     const other = () => 
         renderCard('Other', [
             {name: 'Phone', icon: faPhone},
-            {name: 'CV', icon: faFileLines, link: 'https://github.com/lukemccl'}
+            {name: 'CV', icon: faFileLines, link: 'CV-Luke-McClure.pdf'}
         ]);  
 
     return (
