@@ -32,7 +32,7 @@ export const DirectionalSection = (props: DirectionalSectionProps) => {
     )
 
     return <div className='directional-section card'>
-        <div className='card-body row'>
+        <div className='card-body row' >
             {direction === 'left' ? titlePanel() : bodyCols()}
             {direction === 'left' ? bodyCols() : titlePanel()}
         </div>

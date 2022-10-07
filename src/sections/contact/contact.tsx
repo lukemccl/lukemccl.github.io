@@ -17,7 +17,7 @@ export const Contact = () => {
     };
 
     const renderCard = (header: string, body: ContactType[]) => (
-        <Card className='col contact-card'>
+        <Card className='contact-card'>
             <CardHeader className='contact-header'>{header}</CardHeader>
             <CardBody className='row'>
                 {body.map(b => 
@@ -54,7 +54,7 @@ export const Contact = () => {
         ]);  
 
     return (
-        <div id='Contact' className='section contact row'>
+        <div id='Contact' className='section contact row-cols-auto'>
             {professional()}
             {personal()}
             {other()}

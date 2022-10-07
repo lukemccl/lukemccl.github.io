@@ -62,8 +62,7 @@ export const PowerliftingInterest = () => {
         <>
             <p>Powerlifting is a strength sport where the goal is to score the highest total weight lifted between a single squat, bench press and deadlift.</p> 
             <p>I enjoy the sport only casually as a way to measure my progress and compare against local and global lifters as a means of motivation.</p> 
-            <p>To the right is a display of my current max stats in each lift, along with a graph showing my total.</p> 
-            <p>Below are some clips of these lifts alongside an estimated max based from that clip.</p>
+            <p>Shown is an excerpt of my tracking spreadsheet showing my current max stats in each lift, along with a graph showing the total.</p> 
         </>
     )
 
@@ -72,10 +71,8 @@ export const PowerliftingInterest = () => {
             title='Powerlifting'
             subtitle={subTitle()}
             body={[
-                <Card>
+                <Card className='powerlifting-spreadsheet'>
                     <iframe 
-                        height='660px'
-                        width='720px'
                         src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR_ArJfuBbNYeL7NMr3T2N82_CUu_74aeNnzCdAmDJwQwUY3k-_Cq8_iCR9vUMlZA_agLS9yd9MiFY6/pubhtml?gid=1675255835&amp;single=true&amp;widget=true&amp;headers=false&amp;chrome=false"></iframe>
                 </Card>
             ]}

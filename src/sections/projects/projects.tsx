@@ -100,7 +100,7 @@ export const Projects = () => {
 
     return (
         <div id='Projects' className='section projects'>
-            <div className="row row-cols-3">
+            <div className="row row-cols-auto projects">
                 {renderCards()}
             </div>
         </div>
