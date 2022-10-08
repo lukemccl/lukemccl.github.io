@@ -14,13 +14,6 @@ export const Navbar = (props: NavbarProps) => {
 
     const { sections } = props;
 
-    const profileImage = () => (
-        <div className='profile-avatar'>
-            <img className='profile-image' alt='Luke McClure' src='https://avatars.githubusercontent.com/u/32748875' />
-            Luke McClure
-        </div>
-    );
-
     const externalLinks = () => (
         <div className='external-icons'>
             <a className='icon' href='https://www.linkedin.com/in/luke-mcclure/'>
@@ -53,7 +46,6 @@ export const Navbar = (props: NavbarProps) => {
 
     return (
         <header id='header' className='navbar sticky-top'>
-            {profileImage()}
             {menu()}
             {externalLinks()}
         </header>

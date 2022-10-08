@@ -19,14 +19,14 @@ export const Contact = () => {
     const renderCard = (header: string, body: ContactType[]) => (
         <Card className='contact-card'>
             <CardHeader className='contact-header'>{header}</CardHeader>
-            <CardBody className='row'>
+            <CardBody>
                 {body.map(b => 
                     b.link 
-                    ? <a key={b.name} href={b.link} className='col contact-item'>
+                    ? <a key={b.name} href={b.link} className='contact-item'>
                         <FontAwesomeIcon icon={b.icon} size='4x'/>
                         {b.name}
                     </a>
-                    : <div key={b.name} className='col contact-item'>
+                    : <div key={b.name} className='contact-item'>
                         <FontAwesomeIcon icon={b.icon} size='4x'/>
                         {b.name}
                     </div>
@@ -54,10 +54,18 @@ export const Contact = () => {
         ]);  
 
     return (
-        <div id='Contact' className='section contact row-cols-auto'>
-            {professional()}
-            {personal()}
-            {other()}
+        <div
+            id='Contact'
+            className='section contact'>
+            <div className='section-header'>
+                <h4>Contact</h4>
+                <h6>A few ways to get in contact with me</h6>
+            </div>
+            <div className='section-body row row-cols-auto contact-cards'>
+               {professional()}
+                {personal()}
+                {other()}
+            </div>
         </div>
     );
 }

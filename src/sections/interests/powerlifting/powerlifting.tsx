@@ -62,7 +62,7 @@ export const PowerliftingInterest = () => {
         <>
             <p>Powerlifting is a strength sport where the goal is to score the highest total weight lifted between a single squat, bench press and deadlift.</p> 
             <p>I enjoy the sport only casually as a way to measure my progress and compare against local and global lifters as a means of motivation.</p> 
-            <p>Shown is an excerpt of my tracking spreadsheet showing my current max stats in each lift, along with a graph showing the total.</p> 
+            <p>Shown is an excerpt of my tracking spreadsheet showing my current max in each lift, along with a graph showing the total.</p> 
         </>
     )
 

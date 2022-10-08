@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardImg, CardImgOverlay } from 'reactstrap';
+import { Card, CardHeader, CardImg, CardImgOverlay, CardSubtitle, CardTitle } from 'reactstrap';
 
 import CancerExplorationImg from '../../assets/imgs/cancer.png';
 import CarsImg from '../../assets/imgs/cars.png';
@@ -100,9 +100,13 @@ export const Projects = () => {
 
     return (
         <div id='Projects' className='section projects'>
-            <div className="row row-cols-auto projects">
+            <div className='section-header'>
+                <h4 className='section-title'>Projects</h4>
+                <h6 className='section-subtitle'>A showcase of some of my proudest projects</h6>
+            </div>
+            <div className="section-body row row-cols-auto project-cards">
                 {renderCards()}
             </div>
-        </div>
+        </div>    
     );
 }

@@ -1,25 +1,40 @@
-.contact-card {
-    text-align: center;
-    margin: 0 2rem;
+.contact {
+    min-height: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 2rem;
+    background-color: rgb(190, 190, 190);
 
-    a {
-        text-decoration: none; 
-        color: black; 
-    }
+    justify-content: center;
+    align-items: center;
 
-    .contact-header {
-        font-weight: bold;
-    }
+    .contact-cards {
+        margin-left: 12.5vw;
+        justify-content: center;
 
-    .contact-item {
-
-        display: flex;
-        flex-direction: column;
-
-
-        svg:hover {
-            transition: all .1s ease-in-out; 
-            transform: scale(1.1);
+        .contact-card {
+            width: 30%;
+            margin: .1rem .1rem;
+            text-align: center;
+        
+            a, svg {
+                text-decoration: none; 
+                color: black; 
+            }
+        
+            .contact-header {
+                font-weight: bold;
+            }
+        
+            .contact-item {
+        
+                display: flex;
+                flex-direction: column;
+        
+                svg:hover {
+                    transition: all .1s ease-in-out; 
+                    transform: scale(1.1);
+                }
+            }
         }
     }
 }
