@@ -61,7 +61,7 @@ export const PowerliftingInterest = () => {
     const subTitle = () => (
         <>
             <p>Powerlifting is a strength sport where the goal is to score the highest total weight lifted between a single squat, bench press and deadlift.</p> 
-            <p>I enjoy the sport only casually as a way to measure my progress and compare against local and global lifters as a means of motivation.</p> 
+            <p>I enjoy the sport casually as a way to measure my progress and compare against local and global lifters as a means of motivation.</p> 
             <p>Shown is an excerpt of my tracking spreadsheet showing my current max in each lift, along with a graph showing the total.</p> 
         </>
     )
@@ -69,8 +69,8 @@ export const PowerliftingInterest = () => {
     return <DirectionalSection 
             direction='left'
             title='Powerlifting'
-            subtitle={subTitle()}
-            body={[
+            body={subTitle()}
+            altBody={[
                 <Card className='powerlifting-spreadsheet'>
                     <iframe 
                         src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR_ArJfuBbNYeL7NMr3T2N82_CUu_74aeNnzCdAmDJwQwUY3k-_Cq8_iCR9vUMlZA_agLS9yd9MiFY6/pubhtml?gid=1675255835&amp;single=true&amp;widget=true&amp;headers=false&amp;chrome=false"></iframe>

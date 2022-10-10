@@ -4,7 +4,7 @@ import { Navbar } from './navbar/navbar';
 import { Home } from '../sections/home/home';
 import { About } from '../sections/about/about';
 import { Career } from '../sections/career/career';
-import { Skills } from '../sections/skills/homescreen';
+import { Skills } from '../sections/skills/skills';
 import { Projects } from '../sections/projects/projects';
 import { Interests } from '../sections/interests/interests';
 import { Contact } from '../sections/contact/contact';
