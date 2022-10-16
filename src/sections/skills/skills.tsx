@@ -38,7 +38,7 @@ export const Skills = () => {
             name: 'Other',
             color: blueGrey[600],
             icon: faEllipsis,
-            experiences: ['Lua', 'Bash']
+            experiences: ['Lua', 'Bash', 'Haskell']
         },
     ] as Skill[];
     
