@@ -2,7 +2,7 @@
   "name": "lukemccl.github.io",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://lukemccl.github.io",
+  "homepage": "https://lukemccl.github.io/",
   "license": "",
   "dependencies": {
     "@emotion/react": "^11.10.4",
