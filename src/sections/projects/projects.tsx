@@ -1,8 +1,7 @@
 import React from 'react';
 import { Card, CardImg, CardImgOverlay } from 'reactstrap';
 
-import CancerExplorationImg from '../../assets/imgs/projects/cancer.png';
-import CarsImg from '../../assets/imgs/projects/cars.png';
+import CarsImg from '../../assets/imgs/projects/cars.avif';
 import DissMp4 from '../../assets/mp4s/projects/diss.mp4';
 import CarMp4 from '../../assets/mp4s/projects/mountaincar.mp4';
 import SiteMp4 from '../../assets/mp4s/projects/website.mp4';
@@ -77,14 +76,14 @@ export const Projects = () => {
                 link: 'https://github.com/lukemccl/lukemccl.github.io',
                 color: 'white'
             },
-            {
-                name: 'Used Car Regression',
-                src: CarsImg,
-                type: 'img',
-                description: 'A project to predict the price of a used car given data sourced from craigslist.',
-                link: 'https://github.com/lukemccl/UsedCarsML',
-                color: 'black'
-            },
+            // {
+            //     name: 'Used Car Regression',
+            //     src: CarsImg,
+            //     type: 'img',
+            //     description: 'A project to predict the price of a used car given data sourced from craigslist.',
+            //     link: 'https://github.com/lukemccl/UsedCarsML',
+            //     color: 'black'
+            // },
             {
                 name: 'Machine Learning Labs',
                 src: CarMp4,

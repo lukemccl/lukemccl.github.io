@@ -30,7 +30,7 @@ export const DirectionalSection = (props: DirectionalSectionProps) => {
     }
 
     const bodyCols = () => (
-        altBody.map(b => <div className='col'>{b}</div>)
+        altBody.map(b => <div key={b?.toString()} className='col'>{b}</div>)
     )
 
     return (

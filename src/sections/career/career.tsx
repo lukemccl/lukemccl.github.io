@@ -65,13 +65,13 @@ export const Career = () => {
             <VerticalTimeline >
                 {careerItems.map(item => 
                     <VerticalTimelineElement
+                        key={item.name}
                         date={item.date}
                         icon={<FontAwesomeIcon icon={item.icon} />}
                         iconStyle={{backgroundColor: 'white'}} >
 
                         <h5 className='vertical-timeline-element-title'>{item.name}{item.result ? ': ' + item.result : ''}</h5>
                         <h6 className='vertical-timeline-element-subtitle'>{item.place}</h6>
-                        {item.description}
                     </VerticalTimelineElement>
                 )}
             </VerticalTimeline>

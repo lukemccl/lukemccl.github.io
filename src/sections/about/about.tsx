@@ -4,7 +4,7 @@ import { faLaptopCode, faBrain } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { DirectionalSection } from '../../components/directional-section/directional-section';
-import ThumbsUp from '../../assets/imgs/about/thumbsup.jpg';
+import ThumbsUp from '../../assets/imgs/about/thumbsup.avif';
 
 import './about.scss';
 
