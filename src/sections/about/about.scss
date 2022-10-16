@@ -7,9 +7,27 @@
 
         .avatar-image {
             margin-left: 25%;
-            border-radius: 50%;
-            height: 20rem;
-            width: 20rem;
+            border-radius: 15%;
+            height: 22rem;
+            width: 22rem;
+        }
+
+        .about-text {
+
+            .about-text-title {
+                svg {
+                    font-size: 1.8rem;
+                    margin-right: 10px;
+                }
+    
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .about-text-body {
+                padding-left: 2rem;
+            }
         }
 
         .btn {

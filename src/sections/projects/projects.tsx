@@ -53,14 +53,14 @@ export const Projects = () => {
     
     const renderCards = () => {
         const projects = [
-            {
-                name: 'Cancer Exploration',
-                src: CancerExplorationImg,
-                type: 'img',
-                description: 'An exploration of the genetic structure of cancers using machine learning techniques.',
-                link: 'https://github.com/lukemccl/CancerExploration',
-                color: 'black'
-            },
+            // {
+            //     name: 'Cancer Exploration',
+            //     src: CancerExplorationImg,
+            //     type: 'img',
+            //     description: 'An exploration of the genetic structure of cancers using machine learning techniques.',
+            //     link: 'https://github.com/lukemccl/CancerExploration',
+            //     color: 'black'
+            // },
             {
                 name: 'Gym Form Check',
                 src: DissMp4,
@@ -89,7 +89,7 @@ export const Projects = () => {
                 name: 'Machine Learning Labs',
                 src: CarMp4,
                 type: 'mp4',
-                description: 'A series of labs to explore both deep learning and reinforcement learning.',
+                description: 'A series of labs to explore  deep learning and reinforcement learning.',
                 link: 'https://github.com/lukemccl/ML-Labs',
                 color: 'black'
             },
