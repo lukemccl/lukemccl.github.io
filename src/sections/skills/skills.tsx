@@ -1,11 +1,12 @@
-import React, { ReactElement } from 'react';
+import { ReactElement } from 'react';
 import { faEllipsis } from '@fortawesome/free-solid-svg-icons';
 import { blue, blueGrey, red, yellow } from '@mui/material/colors';
 import { SkillCard } from './skill-card/skill-card';
 
-import './skills.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { JavaPlainIcon, PythonPlainIcon, TypescriptPlainIcon } from "react-devicons";
+import JavaPlainIcon from 'react-devicons/java/plain';
+import PythonPlainIcon from 'react-devicons/python/plain';
+import TypeScriptPlainIcon from 'react-devicons/typescript/plain';
 
 export type Skill = {
     name: string;
@@ -32,7 +33,7 @@ export const Skills = () => {
         {
             name: 'TypeScript',
             color: blue[600],
-            icon: <TypescriptPlainIcon  size="2em" color="white" />,
+            icon: <TypeScriptPlainIcon  size="2em" color="white" />,
             experiences: ['React', 'Bootstrap', 'Jest']
         },
         {

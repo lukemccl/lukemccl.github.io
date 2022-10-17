@@ -72,8 +72,10 @@ export const PowerliftingInterest = () => {
             body={subTitle()}
             altBody={[
                 <Card className='powerlifting-spreadsheet'>
-                    {/* <iframe 
-                        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR_ArJfuBbNYeL7NMr3T2N82_CUu_74aeNnzCdAmDJwQwUY3k-_Cq8_iCR9vUMlZA_agLS9yd9MiFY6/pubhtml?gid=1675255835&amp;single=true&amp;widget=true&amp;headers=false&amp;chrome=false"></iframe> */}
+                    <iframe 
+                        loading="lazy"
+                        title="Powerlifting Data"
+                        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR_ArJfuBbNYeL7NMr3T2N82_CUu_74aeNnzCdAmDJwQwUY3k-_Cq8_iCR9vUMlZA_agLS9yd9MiFY6/pubhtml?gid=1675255835&amp;single=true&amp;widget=true&amp;headers=false&amp;chrome=false"></iframe>
                 </Card>
             ]}
         />

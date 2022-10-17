@@ -1,4 +1,3 @@
-import React from 'react';
 
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { Card, CardBody, CardHeader } from 'reactstrap';

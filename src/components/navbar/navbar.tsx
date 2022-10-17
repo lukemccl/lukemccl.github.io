@@ -2,9 +2,9 @@ import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { Button } from 'reactstrap';
 
 import './navbar.scss'
-import { Button } from 'reactstrap';
 
 export interface NavbarProps {
     sections: string[];
@@ -16,13 +16,13 @@ export const Navbar = (props: NavbarProps) => {
 
     const externalLinks = () => (
         <div className='external-icons'>
-            <a className='icon' href='https://www.linkedin.com/in/luke-mcclure/'>
-                <FontAwesomeIcon  icon={faLinkedin} />
+            <a className='icon' aria-label='linkedin' href='https://www.linkedin.com/in/luke-mcclure/'>
+                <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a className='icon' href='https://github.com/lukemccl'>
+            <a className='icon' aria-label='github' href='https://github.com/lukemccl'>
                 <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a className='icon' href='https://www.instagram.com/l.mccl/'>
+            <a className='icon' aria-label='instagram'  href='https://www.instagram.com/l.mccl/'>
                 <FontAwesomeIcon icon={faInstagram} />
             </a>
         </div>

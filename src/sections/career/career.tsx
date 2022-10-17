@@ -1,8 +1,9 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faComputer, faGraduationCap, faSchool } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+
 import 'react-vertical-timeline-component/style.min.css';
 
 import './career.scss'

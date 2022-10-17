@@ -1,4 +1,3 @@
-import React from 'react';
 import { PowerliftingInterest } from './powerlifting/powerlifting';
 
 import './interests.scss';

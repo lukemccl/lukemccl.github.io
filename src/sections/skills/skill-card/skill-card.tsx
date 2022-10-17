@@ -1,9 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { CardContent } from "@mui/material";
-import Avatar from "@mui/material/Avatar";
+import { Avatar, CardContent } from "@mui/material";
 import { Card } from "reactstrap";
 import { Skill } from "../skills";
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 import './skills-card.scss';
 

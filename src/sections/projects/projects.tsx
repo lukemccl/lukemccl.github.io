@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card, CardImg, CardImgOverlay } from 'reactstrap';
 
-import CarsImg from '../../assets/imgs/projects/cars.avif';
 import DissMp4 from '../../assets/mp4s/projects/diss.mp4';
 import CarMp4 from '../../assets/mp4s/projects/mountaincar.mp4';
 import SiteMp4 from '../../assets/mp4s/projects/website.mp4';
