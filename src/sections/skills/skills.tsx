@@ -1,43 +1,44 @@
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import React, { ReactElement } from 'react';
 import { faEllipsis } from '@fortawesome/free-solid-svg-icons';
 import { blue, blueGrey, red, yellow } from '@mui/material/colors';
-import React from 'react';
 import { SkillCard } from './skill-card/skill-card';
 
 import './skills.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { JavaPlainIcon, PythonPlainIcon, TypescriptPlainIcon } from "react-devicons";
 
 export type Skill = {
     name: string;
-    icon: string | IconProp;
+    icon: ReactElement;
     color: string;
     experiences: string[];
 }
 
-export const Skills = () => {
 
+export const Skills = () => {
     const skills = [
         {
             name: 'Java',
             color: red[600],
-            icon: 'devicon-java-plain',
+            icon: <JavaPlainIcon  size="2em" color="white"/>,
             experiences: ['Spring Boot', 'JUnit', 'Selenium']
         },
         {
             name: 'Python',
             color: yellow[600],
-            icon: 'devicon-python-plain',
+            icon: <PythonPlainIcon  size="2em" color="white"/>,
             experiences: ['NumPy', 'Pandas', 'PyTorch', 'Jupyter']
         },
         {
             name: 'TypeScript',
             color: blue[600],
-            icon: 'devicon-typescript-plain',
+            icon: <TypescriptPlainIcon  size="2em" color="white" />,
             experiences: ['React', 'Bootstrap', 'Jest']
         },
         {
             name: 'Other',
             color: blueGrey[600],
-            icon: faEllipsis,
+            icon: <FontAwesomeIcon icon={faEllipsis} />,
             experiences: ['Lua', 'Bash', 'Haskell']
         },
     ] as Skill[];

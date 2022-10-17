@@ -3,6 +3,7 @@ import { CardContent } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import { Card } from "reactstrap";
 import { Skill } from "../skills";
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 import './skills-card.scss';
 
@@ -22,9 +23,7 @@ export const SkillCard = (props: SkillCardProps) => {
                     height: 60,
                     width: 60
                 }}>
-                    {typeof icon === 'string' 
-                    ? <i className={icon}></i> 
-                    : <FontAwesomeIcon icon={icon} />}
+                    {icon}
                 </Avatar>
                 <h3 style={{ color: `${color}`}}>{name}</h3>
                 {experiences.map(e => <div key={e}>{e}</div>)}
